@@ -8,9 +8,10 @@ for i in range(count_members):
     
 most_money = max(my_dict.values())
 rich_member = ""
-for member in my_dict.keys():
-    if my_dict[member] == most_money:
-        rich_member = member
+# for member in my_dict.keys():
+#     if my_dict[member] == most_money:
+#         rich_member = member
+rich_member = max(my_dict, key=my_dict.get)
 print("--- ИТОГИ СХОДКИ ---")
 print(f"Количество члэнов в банде: {len(my_dict)}")
 print(f"Список члэнов: {my_dict.keys()}")
